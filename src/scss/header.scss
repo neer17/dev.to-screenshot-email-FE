@@ -1,0 +1,26 @@
+.header_root {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  height: 80px;
+  background-color: black;
+  color: aqua;
+  margin-bottom: 30px;
+
+  span {
+    font-size: 70px;
+  }
+  .export_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    background-color: red;
+    color: white;
+    width: fit-content;
+    height: 50px;
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+}
