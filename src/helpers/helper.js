@@ -10,7 +10,6 @@ export const takeScreenshot = async () => {
     const response = await axios.request({
       method: "GET",
       url: query,
-      responseType: "arraybuffer",
       responseEncoding: "binary",
     });
 
