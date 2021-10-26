@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300,700");
 img {
   max-height: 150px;
   margin: auto;
@@ -42,7 +41,6 @@ h5 {
     transform: translateY(-50%);
     color: #ffffff;
     text-transform: uppercase;
-    font-family: "Open Sans Condensed", "Open Sans", helvetica, sans-serif;
     letter-spacing: 0.1em;
     padding: 0.25em;
     line-height: 1;
@@ -59,7 +57,6 @@ h5 {
   }
 
   &__name {
-    font-family: "Open Sans Condensed", "Open Sans", helvetica, sans-serif;
     text-align: center;
     font-size: 1.5em;
     font-weight: 700;
@@ -69,7 +66,6 @@ h5 {
   &__stats {
     margin: 1em 0;
     th {
-      font-family: "Open Sans Condensed", "Open Sans", helvetica, sans-serif;
       text-align: right;
       font-weight: 300;
     }

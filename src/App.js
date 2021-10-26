@@ -1,14 +1,24 @@
+import sass from "sass";
+import * as styles from "./App.scss";
 import logo from "./logo.svg";
 import "./App.css";
-import "./scss/cards.scss";
-import "./scss/header.scss";
+
 import Cards from "./components/Cards";
 import Header from "./components/Header";
 
+import { takeScreenshot } from "./helpers/helper";
+
 function App() {
+  const handleExport = async () => {
+    try {
+      await takeScreenshot();
+    } catch (err) {
+      console.error("Error in export screenshot: \nStack trace", err);
+    }
+  };
   return (
     <div className="App">
-      <Header />
+      <Header handleExport={handleExport} />
       <Cards />
     </div>
   );
