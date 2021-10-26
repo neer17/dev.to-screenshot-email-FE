@@ -6,7 +6,7 @@ import { SCREENSHOT_API_TOKEN } from "./../constants/credentials";
 export const takeScreenshot = async () => {
   try {
     const query =
-      "https://shot.screenshotapi.net/screenshot?token=FF6VVF3-921M3AC-PDXEN1G-1P0RXT2&url=https%3A%2F%2F73b4-180-94-33-62.ngrok.io&full_page=true&output=image&file_type=png&wait_for_event=load";
+      "https://shot.screenshotapi.net/screenshot?token=FF6VVF3-921M3AC-PDXEN1G-1P0RXT2&url=https%3A%2F%2Femail-screenshot.netlify.app%2F&full_page=true&output=image&file_type=png&wait_for_event=load";
     const response = await axios.request({
       method: "GET",
       url: query,
