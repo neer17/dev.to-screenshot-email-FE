@@ -6,12 +6,12 @@ import "./App.css";
 import Cards from "./components/Cards";
 import Header from "./components/Header";
 
-import { takeScreenshot } from "./helpers/helper";
+import { sendEmail } from "./helpers/helper";
 
 function App() {
   const handleExport = async () => {
     try {
-      await takeScreenshot();
+      await sendEmail('neerajsewanisrt8@gmail.com');
     } catch (err) {
       console.error("Error in export screenshot: \nStack trace", err);
     }
